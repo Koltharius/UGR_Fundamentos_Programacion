@@ -1,2 +1,2 @@
-# UGR_Fundamentos_Programacion
+# UGR Fundamentos Programacion
 Prácticas de la asignatura Fundamentos de programación de la UGR
