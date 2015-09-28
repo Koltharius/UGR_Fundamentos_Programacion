@@ -1,2 +1,2 @@
 # UGR Fundamentos Programacion
-Prácticas de la asignatura Fundamentos de programación de la UGR
+Prácticas de la asignatura Fundamentos de Programación impartidas en la ETSIIT
