@@ -26,5 +26,5 @@ int main() {
    // Salida de datos
    cout << " \nEl diseñador gana " << ganancia_diseniador << " y los fabricantes ganan " << ganancia_fabricantes << "\n\n";
 
-   // system("pause");
+   system("pause");
 }
