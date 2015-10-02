@@ -1,5 +1,8 @@
-/* Programa que estima la poblacion que habra
-   en China dentro de dos años.
+/*
+   Autor: David Sanchez Jimenez
+   Ejercicio 5 Relacion 1
+   Descripcion: Programa que estima la poblacion que habra en China dentro de
+                dos años.
    Necesita: Poblacion actual
              Cada cuantos segundos nace una persona
              Cada cuantos segundos muere una persona
@@ -37,6 +40,6 @@ int main() {
 
    // Salida de datos
    cout << "\nLa poblacion total en China dentro de dos años sera " << poblacion_total << "\n\n";
-   
+
    system("pause");
 }

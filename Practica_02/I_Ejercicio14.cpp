@@ -1,6 +1,8 @@
-/* Programa que lee un valor entero de tres digitos
-   y lo muestra por pantalla separado por tres
-   espacios en blanco.
+/*
+   Autor: David Sanchez Jimenez
+   Ejercicio 14 Relacion 1
+   Descripcion: Programa que lee un valor entero de tres digitos
+                y lo muestra por pantalla separado por tres espacios en blanco.
    Necesita: Un numero entero de 3 digitos
 */
 

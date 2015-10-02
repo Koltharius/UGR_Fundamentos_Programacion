@@ -1,8 +1,10 @@
-/* Programa que calcula la media aritmetica muestral
-   y la desviacion estandar muestral para n personas
-   Necesita:
-   Calcula: La media aritmetica muestral y la
-            desviacion tipica
+/*
+   Autor: David Sanchez Jimenez
+   Ejercicio 10 Relacion 1
+   Descripcion: Programa que calcula la media aritmetica muestral
+                y la desviacion estandar muestral para n personas
+   Necesita: El valor de tres alturas expresado en centimetros
+   Calcula: La media aritmetica muestral y la desviacion tipica
 */
 
 #include <iostream>

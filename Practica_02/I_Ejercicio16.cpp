@@ -1,5 +1,8 @@
-/* Programa que calcula el numero de segundos que hay
-   entre dos instantes de tiempo.
+/*
+   Autor: David Sanchez Jimenez
+   Ejercicio 16 Relacion 1
+   Descripcion: Programa que calcula el numero de segundos que hay
+                entre dos instantes de tiempo.
    Necesita: Hora, minuto y segundo inicial
              Hora, minuto y segundo final
    Calcula: Tiempo en segundos entre ambos instantes

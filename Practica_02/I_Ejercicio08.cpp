@@ -1,6 +1,9 @@
-/* Programa que calcula el reparto de ganancias entre
-   varios trabajadores
-   Necesita: ganancia_total
+/*
+   Autor: David Sanchez Jimenez
+   Ejercicio 8 Relacion 1
+   Descripcion: Programa que calcula el reparto de ganancias entre
+                varios trabajadores
+   Necesita: La ganancia total
    Calcula: Ganancia de cada uno de los trabajadores
 */
 
