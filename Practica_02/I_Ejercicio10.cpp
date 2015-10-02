@@ -11,6 +11,7 @@
 using namespace std;
 
 int main() {
+   const string Mensaje = "\nIntroduzca la altura en centimetros: "
 
    // Declaracion de datos
    double altura_uno;
@@ -20,15 +21,20 @@ int main() {
    double desviacion;
 
    // Entrada de datos
-   cout << "Introduzca la altura de la primera persona: ";
+   cout << Mensaje;
    cin >> altura_uno;
-   cout << "\nIntroduzca la altura de la segunda persona: ";
+   cout << Mensaje;
    cin >> altura_dos;
-   cout << "\nIntroduzca la altura de la tercera persona: ";
+   cout << Mensaje;
    cin >> altura_tres;
 
    // Computo de datos
+   media = (altura_uno + altura_dos + altura_tres) / n;
 
+   desviacion = sqrt ((pow(altura_uno - media, 2) +
+                       pow(altura_dos - media, 2) +
+                       pow(altura_tres - media, 2)
+                      ) / 3);
 
    // Salida de datos
    cout << "\nEl valor de la media aritmetica es " << media << "\n\n";
