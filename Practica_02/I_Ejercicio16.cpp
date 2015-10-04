@@ -18,13 +18,19 @@ int main() {
    int hora_inicial;
    int minuto_inicial;
    int segundo_inicial;
+
+   int tiempo_inicial_en_segundos;
+
    int hora_final;
-   int segundo_final;
    int minuto_final;
-   int diferencia_hora;
-   int diferencia_minutos;
-   int diferencia_segundos;
-   int diferencia_total;
+   int segundo_final;
+
+   int tiempo_final_en_segundos;
+
+   int horas_a_segundos = 3600;
+   int minutos_a_segundos = 60;
+
+   int tiempo_total;
 
    // Entrada de datos
    cout << "Introduzca la hora inicial: ";
@@ -42,9 +48,18 @@ int main() {
 
    // Computo de datos
 
+   tiempo_inicial_en_segundos = (hora_inicial * horas_a_segundos) +
+                                (minuto_inicial * minutos_a_segundos) +
+                                segundo_inicial;
+
+   tiempo_final_en_segundos = (hora_final * horas_a_segundos) +
+                              (minuto_final * minutos_a_segundos) +
+                              segundo_final;
+
+   tiempo_total = tiempo_final_en_segundos - tiempo_inicial_en_segundos;
 
    // Salida de datos
-   cout << "\nEl numero de segundos que hay entre ambos instantes es " << segundos_finales;
+   cout << "\nEl numero de segundos que hay entre ambos instantes es " << tiempo_total << "\n\n";
 
    // system("pause");
 }

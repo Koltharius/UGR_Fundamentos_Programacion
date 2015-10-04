@@ -36,10 +36,13 @@ int main() {
    muertes = tiempo_total / tiempo_muerte;
    emigraciones = tiempo_total / tiempo_emigracion;
 
-   poblacion_total = poblacion + (nacimientos - muertes - emigraciones);
+   poblacion_total = poblacion + nacimientos - muertes - emigraciones;
 
    // Salida de datos
+   cout << "\nnacimientos " << nacimientos;
+   cout << "\nmuertes " << muertes;
+   cout << "\nemigraciones " << emigraciones;
    cout << "\nLa poblacion total en China dentro de dos años sera " << poblacion_total << "\n\n";
 
-   system("pause");
+   //system("pause");
 }

@@ -30,5 +30,7 @@ int main() {
    edad_Juan = temporal;
 
    // Salida de datos
-   cout << "\nAhora la edad de Pedro es " << edad_Pedro << " y la edad de Juan es " << edad_Juan;
+   cout << "\nAhora la edad de Pedro es " << edad_Pedro << " y la edad de Juan es " << edad_Juan << "\n\n";
+
+   // system("pause");
 }

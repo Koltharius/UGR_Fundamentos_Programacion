@@ -30,5 +30,5 @@ int main() {
    // Salida de datos
    cout << "\nEl numero es " << centenas << "   " << decenas << "   " << unidades << "\n\n";
 
-   system("pause");
+   // system("pause");
 }

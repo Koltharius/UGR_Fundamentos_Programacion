@@ -13,7 +13,7 @@
 using namespace std;
 
 int main() {
-   const string Mensaje = "\nIntroduzca la altura en centimetros: "
+   const string Mensaje = "\nIntroduzca la altura en centimetros: ";
 
    // Declaracion de datos
    double altura_uno;
@@ -31,7 +31,7 @@ int main() {
    cin >> altura_tres;
 
    // Computo de datos
-   media = (altura_uno + altura_dos + altura_tres) / n;
+   media = (altura_uno + altura_dos + altura_tres) / 3;
 
    desviacion = sqrt ((pow(altura_uno - media, 2) +
                        pow(altura_dos - media, 2) +
@@ -39,6 +39,8 @@ int main() {
                       ) / 3);
 
    // Salida de datos
-   cout << "\nEl valor de la media aritmetica es " << media << "\n\n";
+   cout << "\nEl valor de la media aritmetica es " << media;
    cout << "\nEl valor de la desviacion tipica es " << desviacion << "\n\n";
+
+   // system("pause");
 }
