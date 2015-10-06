@@ -15,16 +15,26 @@ int main() {
    int horas;
    int minutos;
    int segundos;
-   int horas_resultantes;
-   int minutos_resultantes;
-   int segundos_resultantes;
+   int horas_finales;
+   int minutos_finales;
+   int segundos_finales;
+   int dias_finales;
 
    cout << "Introduzca la hora: ";
-   cin >> hora;
-   cout << "\nIntroduzca los minutos: ";
+   cin >> horas;
+   cout << "Introduzca los minutos: ";
    cin >> minutos;
-   cout << "\nIntroduzca los segundos: ";
+   cout << "Introduzca los segundos: ";
    cin >> segundos;
 
+   segundos_finales = segundos % 60;
+   minutos_finales = ((minutos + (segundos / 60)) % 60);
+   horas_finales = (((horas * 60) + (minutos + segundos/60))/60);
+   horas = horas_finales % 24;
+   dias_finales = horas_finales / 24;
 
+   cout << "\nVariables Introducidas: " << horas << " horas, " << minutos << " minutos, " << segundos << " segundos\n";
+   cout << "Variables Transformadas: " << dias_finales << " dias, " << horas_finales << " horas, " << minutos_finales << " minutos, " << segundos_finales << " segundos.\n\n";
+
+   // system("pause");
 }
