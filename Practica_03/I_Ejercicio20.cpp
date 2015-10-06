@@ -11,11 +11,14 @@ using namespace std;
 int main() {
    char caracter_minuscula;
    char caracter_mayuscula;
+   const int distancia_entre_mayuscula_minuscula = 32;
 
    cout << "Introduzca un caracter alfabetico en minuscula: ";
    cin >> caracter_minuscula;
 
-   cout << "El caracter introducido es " << caracter_minuscula << " y su mayuscula es " << caracter_mayuscula << "\n\n"
+   caracter_mayuscula = caracter_minuscula - distancia_entre_mayuscula_minuscula;
+
+   cout << "El caracter introducido es " << caracter_minuscula << " y su mayuscula es " << caracter_mayuscula << "\n\n";
 
    // system("pause");
 }
