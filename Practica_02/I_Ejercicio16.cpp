@@ -18,18 +18,13 @@ int main() {
    int hora_inicial;
    int minuto_inicial;
    int segundo_inicial;
-
    int tiempo_inicial_en_segundos;
-
    int hora_final;
    int minuto_final;
    int segundo_final;
-
    int tiempo_final_en_segundos;
-
    int horas_a_segundos = 3600;
    int minutos_a_segundos = 60;
-
    int tiempo_total;
 
    // Entrada de datos
