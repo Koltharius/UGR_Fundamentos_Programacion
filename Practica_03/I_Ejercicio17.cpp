@@ -13,10 +13,8 @@ int main() {
    int y = 20;
    int z = 30;
    int intermedia;
-   //int intermedia_y;
 
    intermedia = x;
-   //intermedia_ y = y;
 
    x = z;
    z = y;
