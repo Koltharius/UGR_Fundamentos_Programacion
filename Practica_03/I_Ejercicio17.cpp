@@ -9,19 +9,19 @@
 using namespace std;
 
 int main() {
-   int x = 10;
-   int y = 20;
-   int z = 30;
-   int intermedia;
+   int variable_x = 10;
+   int variable_y = 20;
+   int variable_z = 30;
+   int copia_x;
 
-   intermedia = x;
+   copia_x = x;
 
    x = z;
    z = y;
-   y = intermedia;
+   y = copia_x;
 
    cout << "Los valores tras intercamibarlos son:\n";
-   cout << "x = " << x << " y = " << y << " z = " << z << "\n\n";
+   cout << "x = " << variable_x << " y = " << variable_y << " z = " << variable_z << "\n\n";
 
 
 }
