@@ -1,0 +1,16 @@
+Razonar sobre la falsedad o no de las siguentes afirmaciones:
+
+a) 'c' es una expresión de caracteres
+   Verdadero, ya que todas las expresiones de caracteres van entre comillas simples.
+
+b) 4 < 3 es una expresión numérica
+   Falso, es una expresión lógica ya que esta evaluando si 4 es menor que 3
+
+c) (4+3) < 5 es una expresión numérica
+   Falso, es una expresión lógica ya que esta evaluando si 4 + 3 es menor que 5
+
+d) cout << a; da como salida la escritura en pantalla de una a.
+   Falso, da como salida en pantalla el contenido de la variable a
+
+e) ¿Qué realiza cin >> cte, siendo una constante entera?
+   Da error en tiempo de compilacion ya que si la variable es constante no se puede asignar su valor por teclado.
