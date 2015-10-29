@@ -7,8 +7,6 @@ enum class MayusMinus{
    no_es_caracter
 };
 
-
-
 int main() {
    // declaracion de variables
    char caracter;
