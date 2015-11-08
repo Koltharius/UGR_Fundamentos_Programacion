@@ -1,3 +1,10 @@
+/*
+   Autor: David Sanchez Jimenez
+   Ejercicio 39 Relacion 2
+   Descripcion: Numero de repeticiones que hay en
+                una cadena de enteros dada
+*/
+
 #include <iostream>
 
 using namespace std;
