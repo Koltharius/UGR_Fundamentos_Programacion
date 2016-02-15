@@ -10,6 +10,7 @@ bool SonIguales(double uno, double otro){
 /*******************************************************************/
 // Punto2D
 /*******************************************************************/
+
 class Punto2D{
 private:
    double abscisa;
@@ -302,7 +303,6 @@ int main(){
    cout << "\nLongitud:     " << circunf_exterior_cuadrado.Longitud();
    cout << "\nArea circulo: " << circunf_exterior_cuadrado.Area();
 
-
    // Creamos cuadrado_B a partir de los datos introducidos para el primero
    // Imprimimos las coordenas del punto central
 
@@ -316,7 +316,6 @@ int main(){
    cout << centro.Abscisa() << " , " << centro.Ordenada();
 
    // Comprobamos si cuadrado_B contiene a cuadrado_A
-
    if (cuadrado_B.Contiene(cuadrado_A))
       cout << "\nCuadrado B contiene a cuadrado A";
    else
