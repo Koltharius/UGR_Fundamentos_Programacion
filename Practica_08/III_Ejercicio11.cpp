@@ -1,66 +1,94 @@
 /*
    Autor: David Sanchez Jimenez
    Ejercicio 11 Relacion 3
-   Descripcion: Funcion que dice si dos numeros son amigos o no
-   Necesita: Dos numeros
-   Calcula: Calcula si dos numeros son amigos calculando todos los
-            divisores del numero, sumandolos y mirando si son iguales
-            que el otro numero. Si son iguales son amigos.
+   Descripcion: Funcion que cambia de mayuscula a minuscula y viceversa
+   Necesita: Un caracter a convertir
+   Calcula: El caracter introducido convertido. Contemplamos distintas
+            funciones y distintas maneras de hacerlo
 */
 
 #include <iostream>
 using namespace std;
 
-bool Amigos(int primero, int segundo){
-   int contador = 2,
-       cociente,
-       suma_divisores_1 = 1,
-       suma_divisores_2 = 1;
+enum TipoLetra{mayuscula, minuscula, otro_caracter};
+const int DIFERENCIA_MAY_MIN = 'a' - 'A';
 
-   cociente = primero;
+char Mayuscula_a_minuscula(char caracter){
+   return caracter + DIFERENCIA_MAY_MIN;
+}
 
-   while(contador < cociente){
-      if(primero % contador == 0){
-         cociente = primero / contador;
-         suma_divisores_1 += cociente + contador;
-      }
-      contador++;
+char Minuscula_a_mayuscula(char caracter){
+   return caracter - DIFERENCIA_MAY_MIN;
+}
+
+TipoLetra Capitalizacion(char una_letra){
+   TipoLetra tipo_letra;
+
+   if(una_letra >= 'A' && una_letra <= 'Z'){
+      tipo_letra = mayuscula;
    }
-
-   contador = 2;
-   cociente = segundo;
-
-   while(contador < cociente){
-      if(segundo % contador == 0){
-         cociente = segundo / contador;
-         suma_divisores_2 += cociente + contador;
-      }
-      contador++;
-   }
-
-   if(suma_divisores_1 == segundo && suma_divisores_2 == primero){
-      return true;
+   else if(una_letra >= 'a' && una_letra <= 'z'){
+      tipo_letra = minuscula;
    }
    else{
-      return false;
+      tipo_letra = otro_caracter;
    }
+
+   return tipo_letra;
+}
+
+char Convierte_a_Mayuscula(char caracter){
+   char caracter_convertido;
+
+   if(Capitalizacion(caracter) == minuscula){
+      caracter_convertido = Minuscula_a_mayuscula(caracter);
+   }
+   else{
+      caracter_convertido = caracter;
+   }
+
+   return caracter_convertido;
+}
+
+char Convierte_a_Minuscula(char caracter){
+   char caracter_convertido;
+
+   if(Capitalizacion(caracter) == mayuscula){
+      caracter_convertido = Mayuscula_a_minuscula(caracter);
+   }
+   else{
+      caracter_convertido = caracter;
+   }
+
+   return caracter_convertido;
+}
+
+char CambiaMayusculaMinuscula(char caracter){
+   char caracter_convertido;
+   TipoLetra capitalizacion;
+
+   capitalizacion = Capitalizacion(caracter);
+
+   if(capitalizacion == minuscula){
+      caracter_convertido = Minuscula_a_mayuscula(caracter);
+   }
+   else if(capitalizacion == mayuscula){
+      caracter_convertido = Mayuscula_a_minuscula(caracter);
+   }
+   else{
+      caracter_convertido = caracter;
+   }
+
+   return caracter_convertido;
 }
 
 int main(){
-   int primero, segundo;
-   bool amigos;
+   char caracter, caracter_convertido;
 
-   cout << "Introduzca el primer numero: ";
-   cin >> primero;
-   cout << "Introduzca el segundo numero: ";
-   cin >> segundo;
+   cout << "Introduzca un caracter: ";
+   cin >> caracter;
 
-   amigos = Amigos(primero,segundo);
+   caracter_convertido = CambiaMayusculaMinuscula(caracter);
 
-   if(amigos){
-      cout << "\nLos numeros " << primero << " y " << segundo <<  " son amigos.\n\n";
-   }
-   else{
-      cout << "\nLos numeros " << primero << " y " << segundo <<  " no son amigos.\n\n";
-   }
+   cout << "\nEl caracter '" << caracter << "' una vez convertido es '" << caracter_convertido << "'\n\n";
 }

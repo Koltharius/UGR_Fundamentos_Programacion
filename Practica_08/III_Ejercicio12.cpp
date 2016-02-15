@@ -1,6 +1,6 @@
 /*
    Autor: David Sanchez Jimenez
-   Ejercicio 10 Relacion 3
+   Ejercicio 12 Relacion 3
    Descripcion: Funcion que calcula la gaussiana y el CDF
    Necesita: El valor de x, la esperanza y la desviacion
    Calcula: El valor de la gaussiana y el valor del CFD
