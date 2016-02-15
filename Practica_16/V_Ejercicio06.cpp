@@ -113,8 +113,6 @@ int main(){
       cout << palabra.Elemento(i);
    }
 
-   cout << endl;
-
    palabra.EliminaVarios(a_eliminar);
 
    tope = palabra.TotalUtilizados();

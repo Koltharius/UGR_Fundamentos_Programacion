@@ -125,17 +125,4 @@ int main(){
    }
 
    cout << "\n\n";
-   return 0;
-
-   // Entrada:
-   // abcdefgh#jklmn#  1 3
-
-   // Salida:
-   // ajklmndefgh
-
-   // Entrada:
-   // abcdefgh#jk#  1 5
-
-   // Salida:
-   // ajkfgh
 }
