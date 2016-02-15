@@ -1,3 +1,17 @@
+/*
+   Datos:
+      2 a 20
+      1 b 10
+      1 b 4
+      3 c 40
+      1 a 1
+      2 b 15
+      1 a 1
+      1 c 2
+      2 b 6
+      -1
+   */
+
 #include <iostream>
 using namespace std;
 
@@ -78,7 +92,7 @@ int main() {
    Ventas ventas_empresa(id_suc_1, id_suc_2, id_suc_3);
 
    cin >> id_sucursal;
-   
+
    while (id_sucursal != TERMINADOR){
       cin >> codigo_producto;
       cin >> unidades_vendidas;
