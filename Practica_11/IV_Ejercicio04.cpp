@@ -1,7 +1,4 @@
 #include <iostream>
-using namespace std;
-
-#include <iostream>
 #include <string>
 #include <cctype>
 using namespace std;
@@ -77,7 +74,7 @@ public:
       return palindromo;
    }
 
-   void IntercambiaComponentes(int izquierda, int derecha){
+   void Intercambia(int izquierda, int derecha){
       if((izquierda >= 0) && (derecha >= 0) && (izquierda < total_utilizados) && (derecha < total_utilizados)){
          char aux;
          aux = vector_privado[izquierda];
@@ -91,7 +88,7 @@ public:
       int derecha = total_utilizados - 1;
 
       while(izquierda < derecha){
-         IntercambiaComponentes(izquierda, derecha);
+         Intercambia(izquierda, derecha);
          izquierda++;
          derecha--;
       }
@@ -148,12 +145,4 @@ int main(){
    cout << "\nEl numero de mayusculas es " << contador_mayusculas;
 
    cout << endl << endl;
-   return 0;
-}
-
-
-int main(){
-
-
-   return 0;
 }

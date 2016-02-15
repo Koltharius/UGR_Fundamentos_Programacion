@@ -74,7 +74,7 @@ public:
       return palindromo;
    }
 
-   void Intercambia(int izquierda, int derecha){
+   void IntercambiaComponentes(int izquierda, int derecha){
       if((izquierda >= 0) && (derecha >= 0) && (izquierda < total_utilizados) && (derecha < total_utilizados)){
          char aux;
          aux = vector_privado[izquierda];
@@ -88,7 +88,7 @@ public:
       int derecha = total_utilizados - 1;
 
       while(izquierda < derecha){
-         Intercambia(izquierda, derecha);
+         IntercambiaComponentes(izquierda, derecha);
          izquierda++;
          derecha--;
       }
