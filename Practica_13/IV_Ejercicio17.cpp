@@ -20,7 +20,6 @@ public:
          if(nombre_completo[i] == ' '){
             aniadidos = 0;
          }
-
          else if(aniadidos < num_caracteres_a_coger){
             login.push_back(tolower(nombre_completo[i]));
             aniadidos++;

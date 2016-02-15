@@ -146,10 +146,8 @@ public:
 
       if (total_utilizados > 0){
          pos_escritura = 1;
-
          for(pos_lectura=1; pos_lectura < total_utilizados; pos_lectura++){
             pos_encontrado = PrimeraOcurrenciaEntre(0, pos_escritura-1, vector_privado[pos_lectura]);
-
             if (pos_encontrado == -1){
                vector_privado[pos_escritura] = vector_privado[pos_lectura];
                pos_escritura++;
