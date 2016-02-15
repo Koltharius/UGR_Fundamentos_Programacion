@@ -3,6 +3,7 @@
    Ejercicio 39 Relacion 2
    Descripcion: Numero de repeticiones que hay en
                 una cadena de enteros dada
+   Datos: 1 1 1 2 2 2 2 2 3 3 3 3 3 3 5 -1
 */
 
 #include <iostream>
