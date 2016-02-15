@@ -1,7 +1,7 @@
 /*
    Autor: David Sanchez Jimenez
    Ejercicio 30 Relacion 1
-   Datos:
+   Datos del ejercicio:
       2 a 20
       1 b 10
       1 b 4
